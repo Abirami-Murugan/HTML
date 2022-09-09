@@ -1,0 +1,486 @@
+HTML class -3
+Agenda: Major concepts
+how to add video in html.
+how to add audio in html.
+how to add image in html.
+how to add google map in html.
+Is it possible to copy the another website is bring to our website.
+
+how to bring drop down in html.
+how to bring radio button in html.
+how to bring check box in html.
+how to display multiple things in html.
+how to design a table.
+
+Add the favorite icon in html:
+1)<link rel = "icon" type="image/x-icon" href="linux.jpeg">
+
+//favicon is come for head. Because,css file, document type also come for head only.
+
+//usually, images are in MB size. Favourite icons are mostly, 1 or 2 kbs only will come. 
+
+//In, web development the tiny points also important. How to add images without broke pixels in a images. How to minimize the size of the fav
+icon image also very important.
+
+
+How can we get favorite icon:-->Use the below websites:
+https://favicon.io/
+https://www.favicon-generator.org/
+
+2)<p>Hi, I am from <mark>Chennai.</mark> </p>
+
+Add the image in HTML file:
+3 ways:
+i)same folder
+ii)sub folder.
+
+3)<img src="Lotus.webp"
+	 alt="Red Lotus.">
+	
+Image has two properties 
+1)Width
+2)height
+	
+4)<img src="Lotus.webp"
+       alt="Red Lotus"
+	   width="400"//This is represents the pixel. But, we can also give the percentage values.
+	   height="341">
+	   
+5)<img src = "Lotus.webp"
+	 alt=""
+	 width="400"
+	 height="341">Lotus is a flower.Is a National flower for India.
+<!--It will give the discription of the picture outside.-->
+
+6)<img src="Lotus.webp"
+	 alt=""
+	 width="400"
+	 height="341"
+	 title="Lotus is a flower.Is a National flower of India.">
+	 
+7)<figure>
+<img src="Lotus.webp"
+	 alt=""
+	 width="400"
+	 height="341"
+	 title="Lotus is a flower.Is a National flower of India.">
+<figcaption>Lotus flower</figcaption>	
+</figure>
+
+
+Note:Mozila has developer.mozila.org. It's good site. Used for study web designing.
+
+
+8)Video and audio on the web:
+<video src="rabbit.webm" controls>
+</video>
+
+9)<video controls>
+	<source src="rabbit.mp4" type="video/mp4">
+	<source src="rabbit.webm" type="video/webm">
+</video>
+
+9)i)how to add the poster (thumbnail) for video in html?
+<video controls width="400" height="400"
+       autoplay loop muted preload="auto"
+	   poster="rabbit.jpeg">
+	   
+	   
+9)ii)<video src="rabbit.webm" controls
+	poster="Lotus.webp">
+</video>
+
+
+
+
+10)<video controls width="400" height="400"
+	   autoplay loop muted preload="auto"
+	   poster="rabbit.jpeg"> <!-- try preload = "none" -->
+   <source src= "rabbit.mp4" type="video/mp4">
+   <source src="rabbit.webm" type="video/webm">
+</video>
+
+11)<audio controls>
+	<source src = "We-Don't-Talk-Anymore.mp3" type="audio/mp3">
+	<source src = "We-Don't-Talk-Anymore.ogg" type="audio/ogg">
+</audio>
+
+
+11)i)
+<audio controls>
+       <source src="We-Don't-Talk-Anymore.mp3">	
+</audio>
+
+Embedding Technologies:
+<iframe> Embedding an entire web document inside anoter one.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xsbLtHql4g8" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+Embed the youtube video for our HTML project:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jn1pkBgDzIE"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Embedding the google map for our HTML project:
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15545.923583506032
+!2d80.1566717!3d13.06868025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!
+4v1662633518991!5m2!1sen!2sin" width="600" height="450" style="border:0;"
+allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+We can able to contribute in wikipedia.
+Wikimedia-->photo challenge,wictionary,wikibooks
+
+
+sandbox:
+study what is sandbox?
+
+It is use to avoid hacking the website.
+
+Without hacking the user can able to access the website. And, especially contribute the 
+website. The real time example for using this technology website is called wikipedia. 
+
+program for using sandbox:
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Iframe with basic details</title>
+	</head>
+    <body>
+		<h1>Iframe with basic details</h1>
+		
+		<iframe src="https://developer.mozilla.org/en-US/docs/Glossary"
+				width="100%" height="500" frameborder="0" allowfullscreen sandbox>
+			<p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+Fallback link for browsers that don't support iframes</a></p>
+		</iframe>
+	</body>
+</html>
+
+https://en.wikipedia.org/wiki/Sandbox_(computer_security)
+
+Browser Developer Tools:
+ctrl+shift+I or F12.
+
+Clickjacking:
+
+Clickjacking is an interface-based attack that tricks website users into unwittingly 
+clicking on malicious links. In clickjacking, the attackers embed their malicious links
+into buttons or legitimate pages in a website.
+In an infected site,whenever a user clicks on a legitimate link, the attacker gets the 
+confidential information of that user, which ultimately compromises the user's 
+privacy on the Internet.
+
+What is the difference between http and https?
+
+Courtesy: https://developer.mozilla.org/en-US/docs/Glossary/Clickjacking
+
+HTTPS: 
+we can able to change our http to https website or secured website. Then use the below site to change them freely.
+https://letsencrypt.org
+
+Vector Graphics:
+
+Images should not pixelate when we zoom them.
+
+When we zoom in it is pixelating.
+
+Web designer should know
+
+Image editing
+crop the video
+change the image size
+change the image back ground
+
+These kinda above works are day to day activities of him.
+
+image resize
+change image background
+convert right to left into left to right.
+
+So, we need to know 
+
+Image Editing - Free tools.
+
+Two Types of Images:
+1.Raster Images
+2.Vector Images
+
+Raster Images:
+Raster images are defined using a grid of pixels.
+Eg. .bmp,  .png,  .jpg,  .gif.
+
+Vector Images:
+
+SVG[Scalable Vector Graphics] Format Images (.svg).
+It is an XML -based language for describing vector images.
+
+Manually, creates the svg images using html:
+----------------------------------------------
+<svg width="300" height="200">
+	<rect width="100%" height="100%" fill="green" />
+</svg>
+
+
+https://mdn.github.io/learning-area/html/multimedia-and-embedding/adding-
+vector-graphics-to-the-web/vector-versus-raster.html
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vector versus raster</title>
+		</head>
+	<body>
+		<h1>Vector versus raster</h1>
+		
+		<img src="star.png" alt="A raster star">
+		<img src="star.svg" alt="A vector star">
+		</body>
+	</html>
+	
+Responsive Images:
+CSS
+
+
+Web designer Mind set:
+-Need to think SEO point of you. Because, no one come and directly search our website.
+-We need to think about SEO and Google analytics.
+
+Span Tag:
+div Tag:
+
+Table Creation:
+1)
+<table>
+<td>first cell</td>
+</table>
+
+IF we want to see the table. Need to give the border.
+
+2)
+<table border=5>
+	<th>first cell</th>
+	<td>first cell</td>
+</table>
+	
+	
+3)
+<table border=1>
+	<td>first cell</td>
+	<td>second cell</td>
+	<td>third cell</td>
+	<td>fourth cell</td>
+</table>
+
+
+
+4)
+<table border=1>
+	<tr>
+		<td>first cell</td>
+		<td>second cell</td>
+        <td>Third cell</td>
+		<td>Fourth cell</td>
+	</tr>
+	</table>
+	
+	
+5)	
+<table border=1>
+	<tr>
+		<th>first heading</th>
+        <th>second heading</th>
+		<th>third heading</th>
+		<th>fourth heading</th>
+	</tr>
+	<tr>
+	<td>first cell</td>
+	<td>second cell</td>
+	<td>third cell</td>
+	<td>fourth cell</td>
+	</tr>
+	</table>
+	
+6)
+
+<table border=1>
+	<caption>Monthly Electricity Bill</caption>
+	<tr>
+		<th>Months</th>
+		<th>Units</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>100</td>
+	</tr>
+	<tr>
+		<td>February</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>March</td>
+		<td>300</td>
+		</tr>
+	
+	</table>
+
+
+Purpose of adding caption:
+caption is  a attribute. 
+2 advantage for adding the caption:
+i)for search engine optimization.
+ii)for adding the css is easy.
+
+
+span means group.
+
+
+<table>
+	<colgroup>
+		<col span="2" style="background-color:blue"><!-- Inline CSS-->
+		<col style="background-color:red">
+		</colgroup>
+	<tr>
+		<th>Publisher</th>
+		<th>Title</th>
+		<th>Link</th>
+	</tr>
+	<tr>
+		<td>Kaniyam</td>
+		<td>CSS in tamil</td>
+		<td><a href="file:///home/abirami/Downloads/learn-css-in-tamil.pdf">எலிய தமிலில் CSS</a></td>
+			
+	</tr>
+	<tr>
+		<td>Kaniyam</td>
+		<td>JavaScript in tamil</td>
+		<td><a href="file:///home/abirami/Downloads/Learn_Javascript_in_Tamil_a4.pdf">எலிய தமிலில் java script</a></td>
+	</tr>
+	</table>
+	
+Give a spaces in HTML:
+
+inbetween spaces
+----------------
+1)&nbsp -->single space.
+2)ensp  -->2 space.
+3)emsp  -->4 space.
+
+line break
+-----------
+4)<br>
+
+cell padding, cell space -->also, we can use for give a space in html.
+
+
+<!-- Nested Table -->
+<table id="table1" border=1>
+	<tr>
+		<th>title1</th>
+		<th>title2</th>
+		<th>title3</th>
+	</tr>
+	<tr>
+		<td id="nested">
+			<table id = "table2" border=1>	
+				<tr>
+			<td>cell 1</td>
+			<td>cell 2</td>
+			<td>cell 3</td>	
+				 </tr>	
+		</td>
+			</table>
+<td>cell2</td>
+<td>cell3</td>
+</tr>
+<tr>
+	<td>cell 4</td>
+	<td>cell 5</td>
+	<td>cell 6</td>
+</table>
+	
+	
+	
+	
+CheckBoxes in HTML(we can able to choose multiple options same time)
+----------------------------------------------------------------------
+
+eg: What are the areas do you like. we like more places in the world so, we need to choose multiple options.
+	
+<h1>Check the Course you wish</h1>
+<label class ="container" >Java
+	<input type ="checkbox" checked="checked">
+	</label>
+	
+	<label class = "container">Python
+		<input type= "checkbox" id="P">
+		</label>
+
+<label class= "container">Angular
+ <input type="checkbox" id="A">	
+</label>
+
+
+<label class="container">React
+	<input type="checkbox" id="R">
+	</label>
+	
+Radio Buttons in HTML(we can able to choose only one option)
+------------------------------------------------------------
+
+eg: You're indian or Non Residential Indian (NRI)
+	
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html"><h2>HTML</h2></label>
+
+<input type="radio" id ="css" name="fav_language" value="CSS">
+<label for="css"><h2>CSS</h2></label>
+
+<input type="radio" id="javascript" name="fav_language" value="Java Script">
+<label for="java script"><h2>Java Script</h2></label>
+
+
+Input Box: Password
+--------------------
+
+<input type = "text" name = "fname" id = "fname" value="kathir">
+
+<label for = "lname"><h2>Password:</h2></label><br>
+
+<input type = "password" id="lname" name= "lname" value="kumaran">
+
+Drop Down / Select Box
+-----------------------
+1)
+<label for="courses"><h2>Choose Courses</h2></label>
+  
+          <!--<select id="courses" name="courses">-->
+          <!--<select id="courses" name="courses" size="3">-->
+
+<select id="courses" name="courses" size="4" multiple>
+	<option value="java">Java</option>
+	<option value="python" selected>python</option>
+	<option value="ruby">Ruby</option>
+	<option value=".net">.NET</option>
+</select>
+
+
+
+2)
+<label for="courses"><h2>Choose Courses</h2></label>
+
+<select id="courses" name = "courses">
+	<option value="sel"  selected>selected</option>
+	<option value="Java" >Java</option>
+	<option value="Python" >Python</option>
+	<option value="Ruby">Ruby</option>
+	<option value=".Net">.Net</option>
+		</select>
